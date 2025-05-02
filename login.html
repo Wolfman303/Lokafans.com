@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/output.css">
+</head>
+<body>
+    <!-- Awal Navbar -->
+    <nav class="sticky top-0 z-100 py-3 pl-4 shadow-lg sm:py-2.5 sm:pl-6 lg:pl-8 bg-linear-to-r from-indigo-400 from-25% to-indigo-500 to-70% flex justify-between">
+        <div class="lg:ml-10">
+            <a href="index.html" class="text-2xl font-bold text-white lg:text-3xl">LOKA<span class="italic text-orange-400">FANS</span></a>
+            <h2 class="-mt-2 text-sm font-semibold text-red-400 lg:text-lg">By Wolfman_3</h2>
+        </div>
+
+        <div class="items-center hidden mr-32 font-bold text-white lg:flex lg:text-xl">
+            <a href="game.html" class="italic hover:text-orange-400 mr-7 hover:text-shadow-white hover:text-shadow-lg/35">GAME</a>
+            <a href="kesatriya.html" class="italic hover:text-orange-400 mr-7 hover:text-shadow-white hover:text-shadow-lg/35">KESATRIYA</a>
+            <a href="history.html" class="italic hover:text-orange-400 mr-7 hover:text-shadow-white hover:text-shadow-lg/35">HISTORY WEB</a>
+            <a href="login.html" class="italic hover:text-orange-400 hover:text-shadow-white hover:text-shadow-lg/35">LOG IN</a>
+        </div>
+
+        <div class="flex items-center pr-5 sm:pr-6 lg:hidden">
+            <button id="hamburger-button" class="text-2xl font-bold text-white cursor-pointer">
+                ☰
+            </button>
+        </div>
+    </nav>
+    <!-- Akhir Navbar -->
+
+    <!-- Penutup Navbar -->
+    <div id="penutupnav" class="fixed top-0 bottom-0 left-0 right-0 hidden transition-all duration-1000 bg-black z-101 opacity-45"></div>
+    <!-- Akhir Penutup Navbar -->
+
+    <!-- Navbar Kedua -->
+    <div id="menu" class="fixed top-0 bottom-0 right-0 w-56 md:w-64 bg-linear-to-r from-indigo-400 from-0% to-indigo-500 to-55% z-102 text-xl text-white lg:hidden translate-x-56 md:translate-x-64 transition-all duration-700">
+        <button id="close-button" class="absolute text-2xl cursor-pointer right-4 top-5 sm:right-6 sm:top-6 md:top-7">
+            ✕
+        </button>
+
+        <div class="flex flex-col mt-24 italic font-semibold ml-7 md:ml-8">
+            <a href="game.html" class="w-40 py-3 border-t-2 border-gray-400 border-solid hover:text-orange-400 md:w-44">Game</a>
+            <a href="kesatriya.html" class="w-40 py-3 border-t-2 border-gray-400 border-solid hover:text-orange-400 md:w-44">Kesatriya</a>
+            <a href="history.html" class="w-40 py-3 border-t-2 border-gray-400 border-solid hover:text-orange-400 md:w-44">History Web</a>
+            <a href="login.html" class="w-40 py-3 border-t-2 border-gray-400 border-solid hover:text-orange-400 md:w-44">Log In</a>
+        </div>
+    </div>
+    <!-- Akhir Navbar Kedua -->
+
+  <div class="mx-auto">
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="p-8 transition-transform duration-300 ease-in-out bg-white border-2 rounded-lg border-black/10 w-80 md:w-96">
+            <div class="text-center">
+                <i class="mb-4 text-6xl text-indigo-500 lnr lnr-lock"></i>
+                <h2 class="text-2xl font-bold text-gray-500">Please login to your account</h2>
+            </div>
+            <form class="mt-8 space-y-4">
+                <div class="relative">
+                    <label class="block font-medium text-gray-600">Email</label>
+                    <input type="email" class="border-black/20 transition-border duration-300 ease-in-out outline-none border  focus:border-indigo-500 p-2.5 w-full rounded-lg" placeholder="Email" required>
+                </div>
+                <div class="relative">
+                    <label class="block font-medium text-gray-600">Password</label>
+                    <input type="password" class="border-black/20 transition-border duration-300 ease-in-out outline-none border  focus:border-indigo-500 p-2.5 w-full rounded-lg" placeholder="Password" required>
+                </div>
+                <button type="submit" class="w-full py-2 mt-6 font-bold text-white transition-colors duration-300 ease-in-out rounded-lg bg-gradient-to-r from-indigo-600 to-purple-600 hover:from-indigo-700 hover:to-purple-700">Login</button> <!-- Menutup tag button dengan benar -->
+                <div class="mt-4 text-center">
+                    <a href="#" class="text-indigo-500 hover:underline">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+  <footer id="kontak" class="px-4 text-center text-white bg-slate-700">
+        <div class="pt-16 pb-8">
+            <h2 class="mb-2 text-2xl font-bold">Butuh Jasa Kami?</h2>
+            <h2 class="mb-2 text-xl font-bold">Hubungi:</h2>
+            <p class="mb-2">Buka setiap hari 09.00 - 21.00</p>
+            <a href="https://wa.me/62895600687971" class="inline-block px-6 py-3 mt-4 text-white bg-green-600 shadow rounded-xl hover:bg-green-700">Pesan via WhatsApp</a>
+        </div>
+        <div class="flex items-end justify-end p-3 -mt-5 md:p-4 lg:p-7">
+        <h4 class="text-sm">
+            V.2.3.1
+        </h4>
+    </div>
+    </footer>
+    <script src="js/script.js"></script>
+    </body>
+</html>
