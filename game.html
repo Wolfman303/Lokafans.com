@@ -48,6 +48,91 @@
     </div>
     <!-- Akhir Navbar Kedua -->
 
+    <div class="bg-slate-300">
+    <div class="min-h-8">
+        <img src="lokapala/jumbotron/phone.png" alt="lokapala" class="sm:hidden">
+        <img src="lokapala/jumbotron/tab.png" alt="lokapala" class="hidden sm:block lg:hidden">
+        <img src="lokapala/jumbotron/laptop.png" alt="lokapala" class="hidden lg:block">
+    </div>
+
+    <div class="py-10 text-center bg-white text-slate-700 lg:py-20">
+        <h1 class="text-xl font-bold md:mb-2 sm:text-3xl lg:text-4xl">WELCOME TO</h1>
+        <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-7xl">SVAKA LOKAPALA</h2>
+        
+        <p class="w-10/12 mx-auto my-3 text-sm lg:w-8/12 lg:text-lg">Rasakan pengalaman bermain Moba 5v5 terbaik yang terinspirasi oleh kekayaan budaya dan kisah Asia Tenggara. Pilih Ksatriya-mu, bentuk tim, dan bertarung demi kejayaan dan kehormatan!</p>
+        
+        <button class="mt-3 text-sm text-white bg-blue-400 w-44 md:w-48 lg:mt-5 hover:bg-blue-600 rounded-md p-1.5 lg:text-base"><a href="<?= base_url('Game'); ?>">Cari tahu lebih lanjut</a></button>
+    </div>
+    <img src="lokapala/kertas3.png" class="w-full -mt-1" alt="">
+
+    <img src="lokapala/kertas2.png" class="w-full rotate-180" alt="">
+    <div class="py-10 -mt-1 bg-white">
+        <div class="justify-between w-11/12 mx-auto lg:flex">
+            <div class="mb-4 text-center lg:w-1/2 text-slate-700">
+                <h2 class="font-serif text-3xl font-medium tracking-widest sm:text-4xl lg:text-5xl lg:text-left">Pilih</h2>
+                <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-7xl lg:text-left">Kesatriya-mu</h2>
+
+                <p class="w-11/12 mx-auto my-3 text-sm lg:text-left lg:text-lg lg:mx-0">Apakah Anda suka menyerang dalam pertempuran, membantu sekutu Anda, atau sesuatu di antaranya, selalu ada peran untuk Anda di Lokapala. Pilih dari lusinan Ksatriya unik, berdasarkan mitos dan budaya setempat, dan bergabunglah dalam pertarungan epik demi nasib enam alam.</p>
+
+                <button class="text-sm mx-auto lg:text-base text-white bg-blue-400 hover:bg-blue-600 rounded-md p-1.5 mt-3 w-36 md:w-40 lg:mt-5">
+                    <a href="html/kesatriya.html">Lihat semuanya</a>
+                </button>
+            </div>
+
+            <div class="border-2 md:w-3/4 md:mx-auto lg:w-1/2 md:border-4 border-lime-500">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-1000 ease-in-out slider" id="slider1">
+                        <!-- Slide 1 -->
+                        <div class="min-w-full bg-red-400 slide">
+                            <img src="lokapala/slide/slide1.png" alt="Slide 1" class="w-full">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-full bg-yellow-400 slide">
+                            <img src="lokapala/slide/slide2.png" alt="Slide 2" class="w-full">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="min-w-full bg-blue-400 slide">
+                            <img src="lokapala/slide/slide3.png" alt="Slide 3" class="w-full">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="min-w-full bg-purple-400 slide">
+                            <img src="lokapala/slide/slide4.png" alt="Slide 4" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="lokapala/kertas2.png" class="w-full -mt-1" alt="">
+</div>
+
+<script>
+    /* fungsi slide auto di beranda */
+    function autoSlide(sliderId) {
+        const slider = document.getElementById(sliderId);
+        const slides = Array.from(slider.children);
+        let currentIndex = 0;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        // Initialize the first slide
+        showNextSlide();
+
+        // Set interval for auto sliding
+        setInterval(showNextSlide, 6000);
+    }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        // Penundaan 4 detik sebelum fungsi autoSlide dijalankan
+        setTimeout(function() {
+            autoSlide('slider1');
+        }, 4000); // Jeda 4 detik
+    });
+</script>
+
   <footer id="kontak" class="px-4 text-center text-white bg-slate-700">
         <div class="pt-16 pb-8">
             <h2 class="mb-2 text-2xl font-bold">Butuh Jasa Kami?</h2>
