@@ -50,87 +50,310 @@
 
     <div class="bg-slate-300">
     <div class="min-h-8">
-        <img src="lokapala/jumbotron/phone.png" alt="lokapala" class="sm:hidden">
-        <img src="lokapala/jumbotron/tab.png" alt="lokapala" class="hidden sm:block lg:hidden">
-        <img src="lokapala/jumbotron/laptop.png" alt="lokapala" class="hidden lg:block">
+        <img src="lokapala/jumbotron/phone2.png" alt="lokapala" class="sm:hidden">
+        <img src="lokapala/jumbotron/tab2.png" alt="lokapala" class="hidden sm:block lg:hidden">
+        <img src="lokapala/jumbotron/laptop2.png" alt="lokapala" class="hidden lg:block">
     </div>
 
-    <div class="py-10 text-center bg-white text-slate-700 lg:py-20">
-        <h1 class="text-xl font-bold md:mb-2 sm:text-3xl lg:text-4xl">WELCOME TO</h1>
-        <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-7xl">SVAKA LOKAPALA</h2>
-        
-        <p class="w-10/12 mx-auto my-3 text-sm lg:w-8/12 lg:text-lg">Rasakan pengalaman bermain Moba 5v5 terbaik yang terinspirasi oleh kekayaan budaya dan kisah Asia Tenggara. Pilih Ksatriya-mu, bentuk tim, dan bertarung demi kejayaan dan kehormatan!</p>
-        
-        <button class="mt-3 text-sm text-white bg-blue-400 w-44 md:w-48 lg:mt-5 hover:bg-blue-600 rounded-md p-1.5 lg:text-base"><a href="<?= base_url('Game'); ?>">Cari tahu lebih lanjut</a></button>
+    <img src="lokapala/kertas2.png" class="w-full rotate-180" alt="">
+    <div class="pt-10 -mt-1 bg-white pb-15 lg:pt-0 lg:pb-20">
+        <div class="items-center justify-between w-11/12 mx-auto lg:flex">
+            <div class="mb-4 text-center lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-left">VAHANAMUKHA</h2>
+                <p class="w-11/12 mx-auto my-3 text-sm lg:text-left lg:text-lg lg:mx-0">Perbesar aksi dengan perjalanan cepat Ksatriya! Kendaraan bagus ini bukan hanya untuk pertunjukan; itu meningkatkan kecepatan gerakan Anda sehingga Anda dapat terjun ke pertempuran atau melarikan diri dengan cepat. Bersiaplah untuk perjalanan epik!</p>
+            </div>
+
+            <div class="relative w-11/12 mx-auto md:w-3/4 lg:w-1/2">
+                <div class="slider" id="slider">
+                    <!-- Slide 1 -->
+                    <div class="flex-shrink-0 w-full transition-opacity duration-500 opacity-0">
+                        <img src="lokapala/vahana/Vahana1.png" alt="Slide 1" class="w-9/12 mx-auto lg:w-9/12 md:w-6/12">
+                        <div class="mx-auto text-xl font-semibold text-white bg-blue-300 lg:text-3xl lg:-mt-7 w-44 lg:w-72">
+                            <p class="text-center">Default Vahana</p>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="flex-shrink-0 hidden w-full opacity-0">
+                        <img src="lokapala/vahana/Vahana2.png" alt="Slide 2" class="w-9/12 mx-auto lg:w-9/12 md:w-6/12">
+                        <div class="mx-auto text-xl font-semibold text-white bg-blue-300 lg:text-3xl lg:-mt-7 w-44 lg:w-72">
+                            <p class="text-center">Garuda Vahana</p>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="flex-shrink-0 hidden w-full opacity-0">
+                        <img src="lokapala/vahana/Vahana3.png" alt="Slide 3" class="w-9/12 mx-auto lg:w-9/12 md:w-6/12">
+                        <div class="mx-auto text-xl font-semibold text-white bg-blue-300 lg:text-3xl lg:-mt-7 w-44 lg:w-72">
+                            <p class="text-center">Sesha Vahana</p>
+                        </div>
+                    </div>
+                </div>
+                <button id="prevBtn" class="absolute left-0 md:ml-4 text-white transform scale-x-[-1] -translate-y-1/2 top-1/2 w-10 md:w-16">
+                    <img src="https://lokapala.games/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow_slide.f2392b08.png&w=256&q=75" alt="">
+                </button>
+                <button id="nextBtn" class="absolute right-0 w-10 text-white transform -translate-y-1/2 md:mr-4 top-1/2 md:w-16">
+                    <img src="https://lokapala.games/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Farrow_slide.f2392b08.png&w=256&q=75" alt="">
+                </button>
+            </div>
+        </div>
     </div>
     <img src="lokapala/kertas3.png" class="w-full -mt-1" alt="">
 
     <img src="lokapala/kertas2.png" class="w-full rotate-180" alt="">
-    <div class="py-10 -mt-1 bg-white">
-        <div class="justify-between w-11/12 mx-auto lg:flex">
-            <div class="mb-4 text-center lg:w-1/2 text-slate-700">
-                <h2 class="font-serif text-3xl font-medium tracking-widest sm:text-4xl lg:text-5xl lg:text-left">Pilih</h2>
-                <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-7xl lg:text-left">Kesatriya-mu</h2>
-
-                <p class="w-11/12 mx-auto my-3 text-sm lg:text-left lg:text-lg lg:mx-0">Apakah Anda suka menyerang dalam pertempuran, membantu sekutu Anda, atau sesuatu di antaranya, selalu ada peran untuk Anda di Lokapala. Pilih dari lusinan Ksatriya unik, berdasarkan mitos dan budaya setempat, dan bergabunglah dalam pertarungan epik demi nasib enam alam.</p>
-
-                <button class="text-sm mx-auto lg:text-base text-white bg-blue-400 hover:bg-blue-600 rounded-md p-1.5 mt-3 w-36 md:w-40 lg:mt-5">
-                    <a href="html/kesatriya.html">Lihat semuanya</a>
-                </button>
+    <div class="pt-10 -mt-1 bg-white pb-15 lg:pt-0 lg:pb-20">
+        <div class="items-center justify-between w-11/12 mx-auto lg:mb-2 lg:flex">
+            <div class="mb-4 text-center lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-left">LINGAM</h2>
+                <p class="w-11/12 mx-auto my-3 text-sm lg:text-left lg:text-lg lg:mx-0">Agar Ksatriya kamu semakin kuat saat bertanding, jangan lupa untuk mengambil Lingamnya ya! Hal ini dapat memberikan perlindungan dan juga buff kepada Ksatriya dan rekan setimnya. Ada Shakti aktif dan pasif yang memiliki buff berbeda-beda untukmu!</p>
             </div>
 
-            <div class="border-2 md:w-3/4 md:mx-auto lg:w-1/2 md:border-4 border-lime-500">
+            <div class="relative w-11/12 mx-auto mb-3 md:w-3/4 lg:w-1/2">
                 <div class="overflow-hidden">
                     <div class="flex transition-transform duration-1000 ease-in-out slider" id="slider1">
                         <!-- Slide 1 -->
-                        <div class="min-w-full bg-red-400 slide">
-                            <img src="lokapala/slide/slide1.png" alt="Slide 1" class="w-full">
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/lingam1.jpg" alt="Slide 1" class="w-full">
                         </div>
                         <!-- Slide 2 -->
-                        <div class="min-w-full bg-yellow-400 slide">
-                            <img src="lokapala/slide/slide2.png" alt="Slide 2" class="w-full">
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/lingam2.jpg" alt="Slide 2" class="w-full">
                         </div>
                         <!-- Slide 3 -->
-                        <div class="min-w-full bg-blue-400 slide">
-                            <img src="lokapala/slide/slide3.png" alt="Slide 3" class="w-full">
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/lingam3.jpg" alt="Slide 2" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="items-center justify-between w-11/12 mx-auto lg:flex">
+            <div class="relative grid w-11/12 grid-cols-4 gap-2 p-1 mx-auto md:gap-4 lg:gap-6 justify-items-center md:w-3/4 lg:w-1/2">
+                <button class="w-16 h-16 btn-shadow bg-black rounded-full shadow-[0_0_20px_rgba(0,0,0,0.45)] shadow-indigo-500 lg:w-26 lg:h-26 md:w-24 md:h-24" onclick="showInfo(1)">
+                    <img src="lokapala/lingam/lingam_1.webp" class="w-full opacity-100 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(2)">
+                    <img src="lokapala/lingam/lingam_2.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(3)">
+                    <img src="lokapala/lingam/lingam_3.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(4)">
+                    <img src="lokapala/lingam/lingam_4.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(5)">
+                    <img src="lokapala/lingam/lingam_5.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(6)">
+                    <img src="lokapala/lingam/lingam_6.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(7)">
+                    <img src="lokapala/lingam/lingam_7.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+                <button class="w-16 h-16 bg-black rounded-full btn-shadow lg:w-26 lg:h-26 md:w-24 shadow-indigo-500 md:h-24" onclick="showInfo(8)">
+                    <img src="lokapala/lingam/lingam_8.webp" class="w-full opacity-45 hover:opacity-100 img-button" alt="">
+                </button>
+            </div>
+            
+            <div class="mt-4 mb-4 text-center lg:mt-0 lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 id="heading1" class="font-serif text-2xl font-medium sm:text-4xl lg:text-5xl lg:text-right">KAVACA SHAKTI</h2>
+                <p id="paragraph1" class="w-11/12 mx-auto my-2 text-sm lg:w-full lg:text-right lg:text-lg lg:mx-0">Memberikan perisai yang beregenerasi setelah durasi tertentu setelah pengurangan.</p>
+            </div>
+        </div>
+    </div>
+    <img src="lokapala/kertas3.png" class="w-full -mt-1" alt=""> 
+
+    <img src="lokapala/kertas2.png" class="w-full rotate-180" alt="">
+    <div class="pt-10 -mt-1 bg-white pb-15 lg:pt-0 lg:pb-10">
+        <div class="items-center justify-between w-11/12 mx-auto lg:flex">
+            <div class="mb-4 text-center lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-left">RAKSATRIYA</h2>
+                <p class="w-11/12 mx-auto my-3 text-sm lg:text-left lg:text-lg lg:mx-0">Kalahkan Rakshasa yang menakutkan dan raih hadiah utama: bertransformasi menjadi Raksatriya yang perkasa, seorang pejuang yang dipenuhi dengan esensi tangguh Rakshasa! Berani mewujudkan kekuatan legenda?</p>
+            </div>
+
+            <div class="relative w-11/12 mx-auto md:w-3/4 lg:w-1/2">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-1000 ease-in-out slider" id="slider2">
+                        <!-- Slide 1 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/raksatriya.jpg" alt="Slide 1" class="w-full">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/rakshasa1.jpg" alt="Slide 1" class="w-full">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/rakshasa2.jpg" alt="Slide 1" class="w-full">
                         </div>
                         <!-- Slide 4 -->
-                        <div class="min-w-full bg-purple-400 slide">
-                            <img src="lokapala/slide/slide4.png" alt="Slide 4" class="w-full">
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/rakshasa3.jpg" alt="Slide 1" class="w-full">
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/rakshasa4.jpg" alt="Slide 1" class="w-full">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <img src="lokapala/kertas2.png" class="w-full -mt-1" alt="">
+    <img src="lokapala/kertas3.png" class="w-full -mt-1" alt="">
+
+    <img src="lokapala/kertas2.png" class="w-full rotate-180" alt="">
+    <div class="pt-10 -mt-1 bg-white pb-15 lg:pt-0 lg:pb-10">
+        <div class="items-center justify-between w-11/12 mx-auto lg:flex">
+            <h2 class="font-serif text-3xl font-medium text-center sm:text-6xl lg:hidden text-slate-700">AWAKENED ANCIENT</h2>
+
+            <div class="relative w-11/12 mx-auto overflow-hidden md:w-3/4 lg:w-1/2">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-1000 ease-in-out slider" id="slider3">
+                        <!-- Slide 1 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/ancient_blue.webp" alt="Slide 1" class="w-full">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/ancient_red.webp" alt="Slide 2" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mb-4 text-center lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 class="hidden font-serif text-3xl font-medium text-center sm:text-5xl lg:block lg:text-right">AWAKENED ANCIENT</h2>
+                <p class="w-11/12 mx-auto my-3 text-sm lg:w-full lg:text-right lg:text-lg lg:mx-0">Saat jam permainan mencapai 25 menit, Mega Ancient bangkit dari tidurnya, siap memasuki medan perang!</p>
+            </div>
+        </div>
+    </div>
+    <img src="lokapala/kertas3.png" class="w-full -mt-1" alt="">
+
+    <img src="lokapala/kertas2.png" class="w-full rotate-180" alt="">
+    <div class="pt-10 -mt-1 bg-white pb-15 lg:pt-0 lg:pb-20">
+        <div class="items-center justify-between w-11/12 mx-auto lg:mb-2 lg:flex">
+            <div class="mb-4 text-center lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 class="font-serif text-3xl font-medium sm:text-6xl lg:text-left">MANTRA</h2>
+                <p class="w-11/12 mx-auto my-3 text-sm lg:text-left lg:text-lg lg:mx-0">Ucapkan mantra dan rasakan kekuatannya! Pilih mantra Anda dan tingkatkan Ksatriya Anda dengan kemampuan ekstra dalam permainan. Bersiaplah untuk menguasai arena!</p>
+            </div>
+
+            <div class="relative w-11/12 mx-auto mb-3 md:w-3/4 lg:w-1/2">
+                <div class="overflow-hidden">
+                    <div class="flex transition-transform duration-1000 ease-in-out slider" id="slider4">
+                        <!-- Slide 1 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/lingam1.jpg" alt="Slide 1" class="w-full">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/lingam2.jpg" alt="Slide 2" class="w-full">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="min-w-full">
+                            <img src="lokapala/slide/lingam3.jpg" alt="Slide 2" class="w-full">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="items-center justify-between w-11/12 mx-auto lg:flex">
+            <div class="relative grid w-11/12 grid-cols-5 gap-2 p-1 mx-auto md:gap-4 lg:gap-6 justify-items-center md:w-3/4 lg:w-1/2">
+                <button class="w-14 h-14 btn-shadow2 bg-black rounded-full shadow-[0_0_20px_rgba(0,0,0,0.45)] shadow-indigo-500 md:w-24 md:h-24" onclick="showMantra(1)">
+                    <img src="lokapala/mantra/man1.webp" class="w-full opacity-100 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(2)">
+                    <img src="lokapala/mantra/man2.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(3)">
+                    <img src="lokapala/mantra/man3.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(4)">
+                    <img src="lokapala/mantra/man4.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(5)">
+                    <img src="lokapala/mantra/man5.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(6)">
+                    <img src="lokapala/mantra/man6.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(7)">
+                    <img src="lokapala/mantra/man7.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(8)">
+                    <img src="lokapala/mantra/man8.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(9)">
+                    <img src="lokapala/mantra/man9.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+                <button class="bg-black rounded-full w-14 h-14 btn-shadow2 md:w-24 shadow-indigo-500 md:h-24" onclick="showMantra(10)">
+                    <img src="lokapala/mantra/man10.webp" class="w-full opacity-45 hover:opacity-100 img-buttonMan" alt="">
+                </button>
+            </div>
+            
+            <div class="mt-4 mb-4 text-center lg:mt-0 lg:px-5 lg:py-5 lg:w-1/2 text-slate-700">
+                <h2 id="heading2" class="font-serif text-2xl font-medium sm:text-4xl lg:text-5xl lg:text-right">EBULLIENCE</h2>
+                <p id="paragraph2" class="w-11/12 mx-auto my-2 text-sm lg:w-full lg:text-right lg:text-lg lg:mx-0">Mendapatkan bonus Kecepatan Serangan dan Kerusakan Serangan untuk Ksatriya.</p>
+            </div>
+        </div>
+    </div>
+    <img src="lokapala/kertas3.png" class="w-full -mt-1" alt="">
 </div>
 
 <script>
-    /* fungsi slide auto di beranda */
-    function autoSlide(sliderId) {
-        const slider = document.getElementById(sliderId);
-        const slides = Array.from(slider.children);
-        let currentIndex = 0;
+    /* fungsi slide vahanamukha */
+    const slider = document.getElementById('slider');
+    const slides = slider.children;
+    let numberIndex = 0;
 
-        function showNextSlide() {
-            currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
-            slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+    function showSlide(index) {
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.add('hidden', 'opacity-0');
         }
-
-        // Initialize the first slide
-        showNextSlide();
-
-        // Set interval for auto sliding
-        setInterval(showNextSlide, 6000);
+        slides[index].classList.remove('hidden');
+        requestAnimationFrame(() => {
+            slides[index].classList.add('transition-opacity', 'duration-500');
+            slides[index].classList.remove('opacity-0');
+        });
     }
 
-    document.addEventListener("DOMContentLoaded", function() {
-        // Penundaan 4 detik sebelum fungsi autoSlide dijalankan
-        setTimeout(function() {
-            autoSlide('slider1');
-        }, 4000); // Jeda 4 detik
+    document.getElementById('prevBtn').addEventListener('click', () => {
+        numberIndex = (numberIndex > 0) ? numberIndex - 1 : slides.length - 1;
+        showSlide(numberIndex);
     });
+
+    document.getElementById('nextBtn').addEventListener('click', () => {
+        numberIndex = (numberIndex < slides.length - 1) ? numberIndex + 1 : 0;
+        showSlide(numberIndex);
+    });
+
+    showSlide(numberIndex);
+
+    /* fungsi slide auto lingam, rakshasa, dan awakened */
+    function autoSlide(sliderId) {
+            const slider = document.getElementById(sliderId);
+            const slides = Array.from(slider.children);
+            let currentIndex = 0;
+            function showNextSlide() {
+                currentIndex = (currentIndex < slides.length - 1) ? currentIndex + 1 : 0;
+                slider.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+
+            // Initialize the first slide
+            showNextSlide();
+
+            // Set interval for auto sliding
+            setInterval(showNextSlide, 7000);
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            // Penundaan 4 detik sebelum fungsi autoSlide dijalankan
+            setTimeout(function() {
+                autoSlide('slider1');
+                autoSlide('slider2');
+                autoSlide('slider3');
+                autoSlide('slider4');
+            }, 5000); // Jeda 5 detik
+        });
 </script>
 
   <footer id="kontak" class="px-4 text-center text-white bg-slate-700">
